@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+  height: 100vh;
+  display: flex;
+  background-color: black;
+}
+.colonka {
+  padding: 10px;
+  color: rgb(193, 198, 203);
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  border: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid white;
+}
+.colonka h1 {
+  transition: color 0.8s;
+}
+.colonka h1:hover {
+  color: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.466);
+  cursor: pointer;
+}
+button {
+  padding: 10px;
+  border: 0px solid;
+  background-color: rgba(240, 248, 255, 0);
+  font-size: 1.5rem;
+  transition: background 0.8s;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.button1 {
+    margin-top: 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container_button {
+    font-size: 30px;
+  border-radius: 40px;
+  border:  3px solid rgba(255, 255, 255, 0.512);
+  padding: 40px;
+  background-color: black;
+  color: aliceblue;
+  animation: Bom 2s ease infinite;
+  transform: scale(1);
+  box-shadow: 3px 3px 3px white;
+}
+@keyframes Bom{
+0%{
+    transform: scale(1);
+}
+30%{
+
+    transform: scale(0.9);
+}
+70%{
+    transform: scale(1);
+}
+}
+.container_button:hover{
+    opacity: 70%;
+    cursor: pointer;
+    background-color: dimgray;
+}
+@media (max-width: 400px) {
+  body {
+    flex-direction: column;
+  }
+}
